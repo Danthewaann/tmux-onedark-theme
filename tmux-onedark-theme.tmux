@@ -48,7 +48,8 @@ set "message-command-bg" "$onedark_black"
 set "status-attr" "none"
 set "status-left-attr" "none"
 
-setw "window-status-fg" "$onedark_black"setw "window-status-bg" "$onedark_black"
+setw "window-status-fg" "$onedark_black"
+setw "window-status-bg" "$onedark_black"
 setw "window-status-attr" "none"
 
 setw "window-status-activity-bg" "$onedark_black"
@@ -74,14 +75,14 @@ set "status-fg" "$onedark_white"
 set "@prefix_highlight_fg" "$onedark_black"
 set "@prefix_highlight_bg" "$onedark_green"
 set "@prefix_highlight_copy_mode_attr" "fg=$onedark_black,bg=$onedark_green"
-set "@prefix_highlight_output_prefix" "  "
+set "@prefix_highlight_output_prefix" " / "
 
 status_widgets=$(get "@onedark_widgets")
 time_format=$(get "@onedark_time_format" "%R")
 date_format=$(get "@onedark_date_format" "%d/%m/%Y")
 
-set "status-right" "#[fg=$onedark_white,bg=$onedark_black,nounderscore,noitalics]${time_format}  ${date_format} #[fg=$onedark_visual_grey,bg=$onedark_black]#[fg=$onedark_visual_grey,bg=$onedark_visual_grey]#[fg=$onedark_white, bg=$onedark_visual_grey]${status_widgets} #[fg=$onedark_green,bg=$onedark_visual_grey,nobold,nounderscore,noitalics]#[fg=$onedark_black,bg=$onedark_green,bold] #h #[fg=$onedark_yellow, bg=$onedark_green]#[fg=$onedark_red,bg=$onedark_yellow]"
-set "status-left" "#[fg=$onedark_black,bg=$onedark_green,bold] #S #{prefix_highlight}#[fg=$onedark_green,bg=$onedark_black,nobold,nounderscore,noitalics]"
+set "status-right" "#[fg=$onedark_white,bg=$onedark_black,nounderscore,noitalics]${time_format} / ${date_format} #[fg=$onedark_visual_grey,bg=$onedark_black]#[fg=$onedark_visual_grey,bg=$onedark_visual_grey]#[fg=$onedark_white, bg=$onedark_visual_grey]${status_widgets} #[fg=$onedark_green,bg=$onedark_visual_grey,nobold,nounderscore,noitalics]#[fg=$onedark_black,bg=$onedark_green,bold] #h #[fg=$onedark_yellow, bg=$onedark_green]#[fg=$onedark_red,bg=$onedark_yellow]"
+set "status-left" "#[fg=$onedark_black,bg=$onedark_green,bold] #S #{prefix_highlight}#[fg=$onedark_green,bg=$onedark_black,nobold,nounderscore,noitalics]"
 
 if [[ $SHOW_DIRECTORY_NAME -eq 1 ]]; then
   set "window-status-format" "#[fg=$onedark_white,bg=$onedark_black] #I  #(basename #{pane_current_path}) "
