@@ -27,6 +27,15 @@ Once set, these widgets will show on the right.
 
 **default**: empty string.
 
+### show directory name
+
+Directory name can be shown in tabs by setting following option
+
+```
+setenv -g SHOW_DIRECTORY_NAME 1
+```
+
+**default**: empty string.
 #### Time format
 
 Time format can be controlled by setting `@onedark_time_format`, for example:
