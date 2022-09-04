@@ -48,8 +48,7 @@ set "message-command-bg" "$onedark_black"
 set "status-attr" "none"
 set "status-left-attr" "none"
 
-setw "window-status-fg" "$onedark_black"
-setw "window-status-bg" "$onedark_black"
+setw "window-status-fg" "$onedark_black"setw "window-status-bg" "$onedark_black"
 setw "window-status-attr" "none"
 
 setw "window-status-activity-bg" "$onedark_black"
