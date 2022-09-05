@@ -3,13 +3,8 @@ A dark tmux color scheme for terminal that support [True Color](https://en.wikip
 
 ## Why?
 
-I wanted both vim and tmux to share the same color scheme.
-I tried [tmuxline.vim](https://github.com/edkolev/tmuxline.vim) but it didn't render the colors correctly.
-Furthermore, with `tmuxline.vim`, you can't control the widgets on right status bar, which is a key feature IMO.
-
-A picture of my terminal with *@onedark_widgets* set to "*#{package_updates} #{free_mem}*".  
-These widgets are available in [tmux-status-variables](https://github.com/odedlaz/tmux-status-variables).
-![tmux-onedark-theme Preview](https://raw.githubusercontent.com/odedlaz/tmux-onedark-theme/master/preview-terminal.png)
+Fork of tmux-onedark-theme to make it more simple and usable.
+![tmux-onedark-theme Preview](https://raw.githubusercontent.com/H4ckint0sh/tmux-onedark-theme/master/preview.png)
 
 ### Set Options
 
