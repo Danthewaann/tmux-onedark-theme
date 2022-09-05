@@ -4,6 +4,8 @@ onedark_blue="#61afef"
 onedark_yellow="#e5c07b"
 onedark_red="#e06c75"
 onedark_white="#aab2bf"
+
+		onedark_purple = "#c678dd"
 onedark_green="#98c379"
 onedark_visual_grey="#3e4452"
 onedark_comment_grey="#5c6370"
