@@ -4,6 +4,7 @@ A dark tmux color scheme for terminal that support [True Color](https://en.wikip
 ## Why?
 
 Fork of tmux-onedark-theme to make it more simple and usable.
+
 ![tmux-onedark-theme Preview](https://raw.githubusercontent.com/H4ckint0sh/tmux-onedark-theme/master/preview.png)
 
 ### Set Options
