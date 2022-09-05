@@ -4,8 +4,7 @@ onedark_blue="#61afef"
 onedark_yellow="#e5c07b"
 onedark_red="#e06c75"
 onedark_white="#aab2bf"
-
-		onedark_purple = "#c678dd"
+onedark_purple="#c678dd"
 onedark_green="#98c379"
 onedark_visual_grey="#3e4452"
 onedark_comment_grey="#5c6370"
@@ -88,8 +87,8 @@ set "status-left" "#[fg=$onedark_black,bg=$onedark_green,bold] #S #{prefix_highl
 
 if [[ $SHOW_DIRECTORY_NAME -eq 1 ]]; then
     set "window-status-format" "#[fg=$onedark_white,bg=$onedark_black] #I /#(basename #{pane_current_path})  "
-    set "window-status-current-format" "#[fg=$onedark_visual_grey,bg=$onedark_black,nobold,nounderscore,noitalics]#[fg=$onedark_white,bg=$onedark_visual_grey,nobold] #(basename #{pane_current_path}) / #W #[fg=$onedark_visual_grey,bg=$onedark_black,nobold,nounderscore,noitalics]"
+    set "window-status-current-format" "#[fg=$onedark_purple,bg=$onedark_black,nobold,nounderscore,noitalics]#[fg=$onedark_white,bg=$onedark_purple,nobold] #(basename #{pane_current_path}) / #W #[fg=$onedark_purple,bg=$onedark_black,nobold,nounderscore,noitalics]"
 else
     set "window-status-format" "#[fg=$onedark_white,bg=$onedark_black] #I / #W "
-    set "window-status-current-format" "#[fg=$onedark_visual_grey,bg=$onedark_black,nobold,nounderscore,noitalics]#[fg=$onedark_white,bg=$onedark_visual_grey,nobold] #I / #W #[fg=$onedark_visual_grey,bg=$onedark_black,nobold,nounderscore,noitalics]"
+    set "window-status-current-format" "#[fg=$onedark_purple,bg=$onedark_black,nobold,nounderscore,noitalics]#[fg=$onedark_white,bg=$onedark_purple,nobold] #I / #W #[fg=$onedark_purple,bg=$onedark_black,nobold,nounderscore,noitalics]"
 fi
