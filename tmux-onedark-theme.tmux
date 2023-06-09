@@ -86,9 +86,9 @@ set "status-right" " ${date_format} #[fg=$onedark_visual_grey,bg=$onedark_black]
 set "status-left" "#[fg=$onedark_black,bg=$onedark_green,bold] #S #{prefix_highlight}#[fg=$onedark_green,bg=$onedark_black,nobold,nounderscore,noitalics]"
 
 if [[ $SHOW_DIRECTORY_NAME -eq 1 ]]; then
-    set "window-status-format" "#[fg=$onedark_white,bg=$onedark_black] #I /#(basename #{pane_current_path})  "
-    set "window-status-current-format" "#[fg=$onedark_green,bg=$onedark_black,nobold,nounderscore,noitalics]#[fg=$onedark_black,bg=$onedark_green,nobold] #(basename #{pane_current_path}) / #W #[fg=$onedark_green,bg=$onedark_black,nobold,nounderscore,noitalics]"
+    set "window-status-format" "#[fg=$onedark_white,bg=$onedark_black] #I:#(basename #{pane_current_path}):#W "
+    set "window-status-current-format" "#[fg=$onedark_green,bg=$onedark_black,nobold,nounderscore,noitalics]#[fg=$onedark_black,bg=$onedark_green,nobold] #I:#(basename #{pane_current_path}):#W #[fg=$onedark_green,bg=$onedark_black,nobold,nounderscore,noitalics]"
 else
-    set "window-status-format" "#[fg=$onedark_white,bg=$onedark_black] #I / #W "
-    set "window-status-current-format" "#[fg=$onedark_green,bg=$onedark_black,nobold,nounderscore,noitalics]#[fg=$onedark_black,bg=$onedark_green,nobold] #I / #W #[fg=$onedark_green,bg=$onedark_black,nobold,nounderscore,noitalics]"
+    set "window-status-format" "#[fg=$onedark_white,bg=$onedark_black] #I:#W "
+    set "window-status-current-format" "#[fg=$onedark_green,bg=$onedark_black,nobold,nounderscore,noitalics]#[fg=$onedark_black,bg=$onedark_green,nobold] #I:#W #[fg=$onedark_green,bg=$onedark_black,nobold,nounderscore,noitalics]"
 fi
