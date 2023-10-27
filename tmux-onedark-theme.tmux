@@ -1,5 +1,6 @@
 #!/bin/bash
 onedark_black="#1f2329"
+onedark_black2="#282c34"
 onedark_blue="#61afef"
 onedark_yellow="#e5c07b"
 onedark_red="#e06c75"
@@ -70,7 +71,7 @@ set "pane-active-border-bg" "$onedark_black"
 set "display-panes-active-colour" "$onedark_yellow"
 set "display-panes-colour" "$onedark_blue"
 
-set "status-bg" "$onedark_black"
+set "status-bg" "$onedark_black2"
 set "status-fg" "$onedark_white"
 
 set "@prefix_highlight_fg" "$onedark_black"
