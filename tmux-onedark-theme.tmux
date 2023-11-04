@@ -6,8 +6,8 @@ onedark_yellow="#e5c07b"
 onedark_red="#e06c75"
 onedark_white="#aab2bf"
 onedark_purple="#c678dd"
-onedark_green="#98c379"
-onedark_visual_grey="#3e4452"
+onedark_green="#8ebd6b"
+onedark_visual_grey="#323641"
 onedark_comment_grey="#5c6370"
 
 get() {
@@ -71,7 +71,7 @@ set "pane-active-border-bg" "$onedark_black"
 set "display-panes-active-colour" "$onedark_yellow"
 set "display-panes-colour" "$onedark_blue"
 
-set "status-bg" "$onedark_black2"
+set "status-bg" "$onedark_black"
 set "status-fg" "$onedark_white"
 
 set "@prefix_highlight_fg" "$onedark_black"
@@ -90,6 +90,6 @@ if [[ $SHOW_DIRECTORY_NAME -eq 1 ]]; then
     set "window-status-format" "#[fg=$onedark_white,bg=$onedark_black] #I:#(tmux-rename-window #{pane_current_path} #S)#W "
     set "window-status-current-format" "#[fg=$onedark_green,bg=$onedark_black,nobold,nounderscore,noitalics]#[fg=$onedark_black,bg=$onedark_green,nobold] #I:#(tmux-rename-window #{pane_current_path} #S)#W #[fg=$onedark_green,bg=$onedark_black,nobold,nounderscore,noitalics]"
 else
-    set "window-status-format" "#[fg=$onedark_white,bg=$onedark_black] #I:#W "
-    set "window-status-current-format" "#[fg=$onedark_green,bg=$onedark_black,nobold,nounderscore,noitalics]#[fg=$onedark_black,bg=$onedark_green,nobold] #I:#W #[fg=$onedark_green,bg=$onedark_black,nobold,nounderscore,noitalics]"
+    set "window-status-format" "#[fg=$onedark_white,bg=$onedark_black,nobold] #I:#W "
+    set "window-status-current-format" "#[fg=$onedark_visual_grey,bg=$onedark_black,nobold]#[fg=$onedark_white,bg=$onedark_visual_grey,bold] #I:#W #[fg=$onedark_visual_grey,bg=$onedark_black,nobold,nounderscore,noitalics]"
 fi
