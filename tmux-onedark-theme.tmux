@@ -91,5 +91,5 @@ if [[ $SHOW_DIRECTORY_NAME -eq 1 ]]; then
     set "window-status-current-format" "#[fg=$onedark_green,bg=$onedark_black,nobold,nounderscore,noitalics]#[fg=$onedark_black,bg=$onedark_green,nobold] #I:#(tmux-rename-window #{pane_current_path} #S)#W #[fg=$onedark_green,bg=$onedark_black,nobold,nounderscore,noitalics]"
 else
     set "window-status-format" "#[fg=$onedark_white,bg=$onedark_black,nobold] #I:#W "
-    set "window-status-current-format" "#[fg=$onedark_visual_grey,bg=$onedark_black,nobold]#[fg=$onedark_white,bg=$onedark_visual_grey,bold] #I:#W #[fg=$onedark_visual_grey,bg=$onedark_black,nobold,nounderscore,noitalics]"
+    set "window-status-current-format" "#[fg=$onedark_visual_grey,bg=$onedark_black,nobold]#[fg=$onedark_white,bg=$onedark_visual_grey,nobold] #I:#W #[fg=$onedark_visual_grey,bg=$onedark_black,nobold,nounderscore,noitalics]"
 fi
