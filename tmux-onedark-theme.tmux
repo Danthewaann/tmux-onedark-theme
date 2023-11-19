@@ -71,7 +71,7 @@ set "copy-mode-match-style" "fg=$onedark_black,bg=$onedark_yellow"
 set "display-panes-active-colour" "$onedark_yellow"
 set "display-panes-colour" "$onedark_blue"
 
-set "status-style" "fg=$onedark_white,bg=$onedark_black"
+set "status-style" "fg=$onedark_white,bg=$onedark_black2"
 
 set "@prefix_highlight_fg" "$onedark_black"
 set "@prefix_highlight_bg" "$onedark_green"
@@ -82,13 +82,13 @@ status_widgets=$(get "@onedark_widgets")
 time_format=$(get "@onedark_time_format" "%R")
 date_format=$(get "@onedark_date_format" "%d/%m/%Y")
 
-set "status-right" " ${date_format} #[fg=$onedark_visual_grey,bg=$onedark_black]#[fg=$onedark_visual_grey,bg=$onedark_visual_grey]#[fg=$onedark_white, bg=$onedark_visual_grey]${status_widgets} #[fg=$onedark_green,bg=$onedark_visual_grey,nobold,nounderscore,noitalics]#[fg=$onedark_black,bg=$onedark_green,bold] #[fg=$onedark_black,bg=$onedark_green,nounderscore,noitalics]${time_format}  "
-set "status-left" "#[fg=$onedark_black,bg=$onedark_green,bold] #S #{prefix_highlight}#[fg=$onedark_green,bg=$onedark_black,nobold,nounderscore,noitalics]"
+set "status-right" " ${date_format} #[fg=$onedark_visual_grey,bg=$onedark_black2]#[fg=$onedark_visual_grey,bg=$onedark_visual_grey]#[fg=$onedark_white, bg=$onedark_visual_grey]${status_widgets} #[fg=$onedark_green,bg=$onedark_visual_grey,nobold,nounderscore,noitalics]#[fg=$onedark_black2,bg=$onedark_green,bold] #[fg=$onedark_black2,bg=$onedark_green,nounderscore,noitalics]${time_format}  "
+set "status-left" "#[fg=$onedark_black2,bg=$onedark_green,bold] #S #{prefix_highlight}#[fg=$onedark_green,bg=$onedark_black2,nobold,nounderscore,noitalics]"
 
 if [[ $SHOW_DIRECTORY_NAME -eq 1 ]]; then
-    set "window-status-format" "#[fg=$onedark_white,bg=$onedark_black] #I:#(tmux-rename-window #{pane_current_path} #S)#W "
+    set "window-status-format" "#[fg=$onedark_white,bg=$onedark_black2] #I:#(tmux-rename-window #{pane_current_path} #S)#W "
     set "window-status-current-format" "#[fg=$onedark_green,bg=$onedark_black,nobold,nounderscore,noitalics]#[fg=$onedark_black,bg=$onedark_green,nobold] #I:#(tmux-rename-window #{pane_current_path} #S)#W #[fg=$onedark_green,bg=$onedark_black,nobold,nounderscore,noitalics]"
 else
-    set "window-status-format" "#[fg=$onedark_white,bg=$onedark_black,nobold] #I:#W "
-    set "window-status-current-format" "#[fg=$onedark_visual_grey,bg=$onedark_black,nobold]#[fg=$onedark_white,bg=$onedark_visual_grey,nobold] #I:#W #[fg=$onedark_visual_grey,bg=$onedark_black,nobold,nounderscore,noitalics]"
+    set "window-status-format" "#[fg=$onedark_white,bg=$onedark_black2,nobold] #I:#W "
+    set "window-status-current-format" "#[fg=$onedark_visual_grey,bg=$onedark_black2,nobold]#[fg=$onedark_white,bg=$onedark_visual_grey,nobold] #I:#W #[fg=$onedark_visual_grey,bg=$onedark_black2,nobold,nounderscore,noitalics]"
 fi
