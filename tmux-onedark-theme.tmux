@@ -9,6 +9,7 @@ onedark_purple="#c678dd"
 onedark_green="#8ebd6b"
 onedark_visual_grey="#323641"
 onedark_comment_grey="#5c6370"
+onedark_search="#464d5e"
 
 get() {
    local option=$1
@@ -65,8 +66,8 @@ set "pane-border-style" "fg=$onedark_visual_grey,bg=$onedark_black"
 set "pane-active-border-style" "fg=$onedark_visual_grey,bg=$onedark_black"
 
 set "mode-style" "fg=$onedark_white,bg=$onedark_visual_grey"
-set "copy-mode-current-match-style" "fg=$onedark_black,bg=#cc9057"
-set "copy-mode-match-style" "fg=$onedark_black,bg=$onedark_yellow"
+set "copy-mode-current-match-style" "bg=$onedark_search"
+set "copy-mode-match-style" "bg=$onedark_search"
 
 set "display-panes-active-colour" "$onedark_yellow"
 set "display-panes-colour" "$onedark_blue"
