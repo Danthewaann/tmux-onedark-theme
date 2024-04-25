@@ -81,15 +81,15 @@ set "@prefix_highlight_output_prefix" " / "
 
 status_widgets=$(get "@onedark_widgets")
 time_format=$(get "@onedark_time_format" "%R")
-date_format=$(get "@onedark_date_format" "%d/%m/%Y ")
+date_format=$(get "@onedark_date_format" "%d/%m/%Y")
 
-set "status-right" " ${date_format}${status_widgets}| ${time_format} "
-set "status-left" "#[fg=$onedark_black,bg=$onedark_green,bold] #S #{prefix_highlight}#[fg=$onedark_green,bg=$onedark_black,nobold,nounderscore,noitalics]"
+set "status-right" " #[fg=$onedark_white,bg=$onedark_black] #S #{prefix_highlight}| ${status_widgets} | ${date_format} | ${time_format}"
+set "status-left" ""
 
 if [[ $SHOW_DIRECTORY_NAME -eq 1 ]]; then
     set "window-status-format" "#[fg=$onedark_white,bg=$onedark_black] #I:#(tmux-rename-window #{pane_current_path} #S)#W "
-    set "window-status-current-format" "#[fg=$onedark_green,bg=$onedark_black,nobold]#[fg=$onedark_black,bg=$onedark_green,bold] #I:#(tmux-rename-window #{pane_current_path})#W #[fg=$onedark_green,bg=$onedark_black,nobold,nounderscore,noitalics]"
+    set "window-status-current-format" "#[fg=$onedark_green,bg=$onedark_black] #I:#(tmux-rename-window #{pane_current_path})#W* "
 else
     set "window-status-format" "#[fg=$onedark_white,bg=$onedark_black] #I:#W "
-    set "window-status-current-format" "#[fg=$onedark_green,bg=$onedark_black,nobold]#[fg=$onedark_black,bg=$onedark_green,bold] #I:#W #[fg=$onedark_green,bg=$onedark_black,nobold,nounderscore,noitalics]"
+    set "window-status-current-format" "#[fg=$onedark_green,bg=$onedark_black] #I:#W* "
 fi
