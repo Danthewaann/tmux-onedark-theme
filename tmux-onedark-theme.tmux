@@ -38,8 +38,8 @@ setw() {
 set "status" "on"
 set "status-justify" "left"
 
-set "status-left-length" "200"
-set "status-right-length" "100"
+set "status-left-length" "100"
+set "status-right-length" "400"
 set "status-right-attr" "none"
 
 set "message-style" "fg=$onedark_white,bg=$onedark_black"
