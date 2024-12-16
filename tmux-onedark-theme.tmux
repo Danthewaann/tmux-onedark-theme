@@ -81,10 +81,8 @@ set "@prefix_highlight_output_prefix" " / "
 
 session_widgets=$(get "@onedark_session_widgets" " ")
 status_widgets=$(get "@onedark_widgets")
-time_format=$(get "@onedark_time_format" "%R")
-date_format=$(get "@onedark_date_format" "%d/%m/%Y")
 
-set "status-right" " #[fg=$onedark_white,bg=$onedark_black2] #S${session_widgets}#{prefix_highlight}${status_widgets}| ${date_format} | ${time_format}"
+set "status-right" " #[fg=$onedark_white,bg=$onedark_black2] #S${session_widgets}#{prefix_highlight}${status_widgets}"
 set "status-left" ""
 
 if [[ $SHOW_DIRECTORY_NAME -eq 1 ]]; then
