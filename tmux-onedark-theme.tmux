@@ -60,7 +60,7 @@ setw "window-status-separator" ""
 set "window-style" "fg=$onedark_white"
 set "window-active-style" "fg=$onedark_white"
 
-set "pane-border-status" "top"
+set "pane-border-status" "off"
 set "pane-border-format" ""
 set "pane-border-style" "fg=$onedark_visual_grey,bg=$onedark_black"
 set "pane-active-border-style" "fg=$onedark_visual_grey,bg=$onedark_black"
@@ -72,7 +72,7 @@ set "copy-mode-match-style" "bg=$onedark_search"
 set "display-panes-active-colour" "$onedark_yellow"
 set "display-panes-colour" "$onedark_blue"
 
-set "status-style" "fg=$onedark_white,bg=$onedark_black"
+set "status-style" "fg=$onedark_white,bg=$onedark_black2"
 
 set "@prefix_highlight_fg" "$onedark_black"
 set "@prefix_highlight_bg" "$onedark_green"
@@ -84,13 +84,13 @@ status_widgets=$(get "@onedark_widgets")
 time_format=$(get "@onedark_time_format" "%R")
 date_format=$(get "@onedark_date_format" "%d/%m/%Y")
 
-set "status-right" " #[fg=$onedark_white,bg=$onedark_black] #S${session_widgets}#{prefix_highlight}${status_widgets}| ${date_format} | ${time_format}"
+set "status-right" " #[fg=$onedark_white,bg=$onedark_black2] #S${session_widgets}#{prefix_highlight}${status_widgets}| ${date_format} | ${time_format}"
 set "status-left" ""
 
 if [[ $SHOW_DIRECTORY_NAME -eq 1 ]]; then
-    set "window-status-format" "#[fg=$onedark_white,bg=$onedark_black] #I:#(tmux-rename-window #{pane_current_path} #S)#W "
+    set "window-status-format" "#[fg=$onedark_white,bg=$onedark_black2] #I:#(tmux-rename-window #{pane_current_path} #S)#W "
     set "window-status-current-format" "#[fg=$onedark_green,bg=$onedark_black] #I:#(tmux-rename-window #{pane_current_path})#W* "
 else
-    set "window-status-format" "#[fg=$onedark_white,bg=$onedark_black] #I:#W "
-    set "window-status-current-format" "#[fg=$onedark_green,bg=$onedark_black] #I:#W* "
+    set "window-status-format" "#[fg=$onedark_white,bg=$onedark_black2] #I:#W "
+    set "window-status-current-format" "#[fg=$onedark_green,bg=$onedark_black2] #I:#W* "
 fi
