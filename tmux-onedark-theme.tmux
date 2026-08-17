@@ -82,8 +82,8 @@ set "@prefix_highlight_output_prefix" " / "
 session_widgets=$(get "@onedark_session_widgets" " ")
 status_widgets=$(get "@onedark_widgets")
 
-set "status-right" ""
-set "status-left" "#[fg=$onedark_white,bg=$onedark_black2]${session_widgets}${status_widgets}#S #[fg=$onedark_white,bg=$onedark_black2]|"
+set "status-right" "#[fg=$onedark_white,bg=$onedark_black2]${session_widgets}${status_widgets}#S #[fg=$onedark_white,bg=$onedark_black2]"
+set "status-left" ""
 
 if [[ $SHOW_DIRECTORY_NAME -eq 1 ]]; then
    set "window-status-format" "#[fg=$onedark_white,bg=$onedark_black2] #I:#(tmux-rename-window #{pane_current_path} #S)#W "
