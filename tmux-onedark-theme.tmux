@@ -82,7 +82,7 @@ set "@prefix_highlight_output_prefix" " / "
 session_widgets=$(get "@onedark_session_widgets" " ")
 status_widgets=$(get "@onedark_widgets")
 
-set "status-right" " #[fg=$onedark_white,bg=$onedark_black2] #S${session_widgets}#{prefix_highlight}${status_widgets}"
+set "status-right" " #[fg=$onedark_white,bg=$onedark_black2]${session_widgets} | #S#{prefix_highlight}${status_widgets}"
 set "status-left" ""
 
 if [[ $SHOW_DIRECTORY_NAME -eq 1 ]]; then
