@@ -35,16 +35,17 @@ setw() {
    tmux set-window-option -gq "$option" "$value"
 }
 
-set "status" "on"
+set "status" 2
+set "status-format[1]" "#[bg=$onedark_black,fill=$onedark_black]"
 set "status-justify" "left"
 
 set "status-left-length" "100"
 set "status-right-length" "400"
 set "status-right-attr" "none"
 
-set "message-style" "fg=$onedark_white,bg=$onedark_black"
-
+set "message-style" "fg=$onedark_white,bg=$onedark_black,fill=$onedark_black"
 set "message-command-style" "fg=$onedark_white,bg=$onedark_black"
+set "message-line" "1"
 
 set "status-attr" "none"
 set "status-left-attr" "none"
