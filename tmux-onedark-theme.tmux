@@ -35,7 +35,7 @@ setw() {
    tmux set-window-option -gq "$option" "$value"
 }
 
-set "status" 2
+set "status" 3
 set "status-format[1]" "#[bg=$onedark_black,fill=$onedark_black]"
 set "status-justify" "left"
 
@@ -83,7 +83,8 @@ set "@prefix_highlight_output_prefix" " / "
 session_widgets=$(get "@onedark_session_widgets" " ")
 status_widgets=$(get "@onedark_widgets")
 
-set "status-right" "#[fg=$onedark_white,bg=$onedark_black2]${session_widgets}${status_widgets}#[fg=$onedark_white,bg=$onedark_black2]"
+set "status-right" "#[fg=$onedark_white,bg=$onedark_black2] #S "
+set "status-format[2]" "#[fg=$onedark_white,bg=$onedark_black2] ${session_widgets}${status_widgets}"
 set "status-left" ""
 
 if [[ $SHOW_DIRECTORY_NAME -eq 1 ]]; then
